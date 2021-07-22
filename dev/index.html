@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Put Web Page Title Here...</title>
+	<title>Vulcan</title>
 
-	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
-	<!-- Put Google Fonts Here -->
-
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+		rel="stylesheet">
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<link rel="stylesheet" href="styles/styles.css?cb=1626986214711">
 
 </head>
-<body>
-<!-- Put your HTML code here... -->
-	<header></header>
 
-<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
-<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-<script src="scripts/script.min.js?cb=1626986214711"></script>
-<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+<body>
+	<!-- Put your HTML code here... -->
+	<header></header>
+	<section class="products">
+		<div class="wave">
+			<img src="images/wave-blue-dark.png" alt="blue dark wave">
+		</div>
+		<h2>Product Advisor</h2>
+		<h3>Find your project's perfect fit</h3>
+		<form action="/" method="post" class="product-form">
+			<div class="form-group">
+				<label for="products-group">Product Type</label>
+				<select id="product-type" name="product-type">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Screen Location</label>
+				<select id="product-type" name="screen-location">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Flow Type</label>
+				<select id="product-type" name="flow-type">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Channel Depth</label>
+				<select id="product-type" name="channel-depth">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Channel Width</label>
+				<select id="product-type" name="channel-width">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+			</div>
+			<div class="form-group submit-btn">
+				<input type="submit" value="Find My Product">
+			</div>
+		</form>
+	</section>
+	<section class="about">
+		<h2 class="header-">Delivering clean safe water since 1975. Refreshing indeed.</h2>
+		<h3>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than
+			900 cities and communities throughout the world.</h3>
+
+		<a class="styled-button" href="#about">About Us</a>
+	</section>
+
+	<section class="video">
+		<iframe src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0" width="640" height="360"
+			frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+	</section>
+
+	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<script src="scripts/script.min.js?cb=1626986214711"></script>
+	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
 </body>
+
 </html>
