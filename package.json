@@ -17,7 +17,11 @@
     "gulp-imagemin": "^6.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",
+<<<<<<< HEAD
     "gulp-sass": "^4.1.1",
+=======
+    "gulp-sass": "^4.0.2",
+>>>>>>> b9b5dcd6aaf2a7a8dc3fb2cf13fb73ec32b6abd8
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify-es": "^1.0.4"
   }
