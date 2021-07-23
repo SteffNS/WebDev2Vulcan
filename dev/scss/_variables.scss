@@ -1,0 +1,33 @@
+// fonts
+$header-font: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$txt-font:'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$header-font-size: 2rem;
+$line-height: 1.5;
+$font-size: 1rem;
+
+// colours
+$colors: (
+    body-bg: #244963,
+    secondary-body-bg:#429bd6,
+    third-body-bg: #bedcef,
+    body-header: #555555,
+    input-color: #bbbbbb,
+    input-txt: #646464,
+    hover-color: #9ae0ec,
+    wrapper-bg-color: #fff,
+);
+
+//media query breakpoints
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+//utility variables
+$img-full: 100%;
+
+//spacing to use with margin or padding 
+$small-space: 1rem;
+$medium-space: 1.5rem;
+$large-space: 2rem;
+$header-padding: 1rem 1rem 0;
+
