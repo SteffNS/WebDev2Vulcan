@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vulcan</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<!-- end Google Fonts -->
+
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<link rel="stylesheet" href="styles/styles.css?cb=1626986214711">
+
+</head>
+<body>
+	<header>
+		<div id="top-logo">
+			<img src="images/logo-white-vulcan.svg" alt="Vulcan logo - Vulcan the proven screen choice">
+		</div>
+
+		<div id="head-nav">
+			<!-- Button placeholder until I figure out the way Alex did it with the open animation -->
+			<button class='menu-toggle' aria-label="Menu Icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#e8e8e8">
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                </svg>
+            </button>
+
+			<nav id="head-nav-list">
+				<ul id="nav-ul">
+					<li class="nav-item"><a href="#">ABOUT</a></li>
+					<li class="nav-item"><a href="#">PRODUCTS</a></li>
+					<li class="nav-item"><a href="#">SERVICES</a></li>
+					<li class="nav-item"><a href="#">PARTS</a></li>
+					<li class="nav-item"><a href="#">NEWS</a></li>
+					<li class="nav-item"><a href="#">CONTACT</a></li>
+					<li class="nav-item"><a href="#">INSTALLATION MAP</a></li>
+					<li class="nav-item"><a href="#">PRODUCT LITERATURE</a></li>
+				</ul>
+			</nav>
+		</div> <!-- End of head-nav div -->
+	</header>
+
+	<section id="header-slider">
+		<div id="gallery-container">
+			<div id="gallery">
+				<img src="images/header-slider-img-01.jpg" alt="Photo of machinery with a blue screen door effect">
+				<img src="images/header-slider-img-02.jpg" alt="Photo of a man welding with a screen door effect on the image">
+				<img src="images/header-slider-img-03.jpg" alt="Photo of two men working on machinery with a screen door effect on the image">
+			</div> <!-- end of gallery div -->
+		</div> <!-- End of gallery container div -->
+
+		<!-- Text and button overlay on the header slider -->
+		<h1>WE DESIGN AND FABRICATE INDESTRUCTIBLE WASTEWATER SCREENS.<br>ENOUGH SAID.</h1>
+		<a href="#" class="styled-button">VIEW PRODUCTS</a>
+		<a href="#" class="styled-button">VIEW SERVICES</a>
+	</section> <!-- end of header-slider section -->
+
+	<div id="white-wave-bg">
+		<img src="images/wave-white.png" alt="White wave background">
+	</div>
+
+	<section id="customized">
+		<h2>CUSTOMIZED PER ORDER</h2>
+		<p>
+			Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening products are either. We'll help determine exactly what you need.
+		</p>
+
+		<div id="custom-products">
+			<div id="product-1">
+				<img src="images/machine-01-912x834.png" alt="Photo of a Vulcan machine"
+				srcset=
+				"images/machine-01-912x834.png 912w,
+				images/machine-01-768x702.png 768w,
+				images/machine-01-300x274.png 300w"
+				sizes="(max-width: 1260px), 1200px">
+				<h3>SCREENING</h3>
+			</div> <!-- END OF PRODUCT - 1 -->
+
+			<hr>
+
+			<div id="product-2">
+				<img src="images/machine-02-912x834.png" alt="Photo of a second Vulcan machine"
+				srcset=
+				"images/machine-02-912x834.png 912w,
+				images/machine-02-768x702.png 768w,
+				images/machine-02-300x274.png 300w"
+				sizes="(max-width: 1260px), 1200px">
+				<h3>SCREENINGS HANDLING</h3>
+			</div> <!-- END OF PRODUCT - 2 -->
+
+			<hr>
+
+			<div id="product-3">
+				<img src="images/machine-03-912x834.png" alt="Photo of a Vulcan machine"
+				srcset=
+				"images/machine-03-912x834.png 912w,
+				images/machine-03-768x702.png 768w,
+				images/machine-03-300x274.png 300w"
+				sizes="(max-width: 1260px), 1200px">
+				<h3>GRIT HANDLING</h3>
+			</div> <!-- END OF PRODUCT - 3 -->
+
+			<hr>
+
+			<div id="product-4">
+				<img src="images/machine-04-912x834.png" alt="Photo of a Vulcan machine"
+				srcset=
+				"images/machine-04-912x834.png 912w,
+				images/machine-04-768x702.png 768w,
+				images/machine-04-300x274.png 300w"
+				sizes="(max-width: 1260px), 1200px">
+				<h3>SLUDGE THICKENING</h3>
+			</div> <!-- END OF PRODUCT - 4 -->
+
+		</div> <!-- End of custom products div -->
+	</section> <!-- End of customized section -->
+
+<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
+<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+<script src="scripts/script.min.js?cb=1626986214711"></script>
+<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+</body>
+</html>
