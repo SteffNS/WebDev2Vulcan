@@ -1,0 +1,8 @@
+// testing the css
+.body {
+    background-color: map-get($colors, body-bg);
+}
+.products h2 {
+    font-size: $font-size;
+    font-family: $header-font;
+}

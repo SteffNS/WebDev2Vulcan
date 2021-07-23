@@ -16,6 +16,7 @@
 
 	<!-- font awesome link so I can use icons -->
 	<script src="https://kit.fontawesome.com/abe241795b.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/769604f610.js" crossorigin="anonymous"></script>
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<link rel="stylesheet" href="styles/styles.css?cb=1626986214711">
@@ -37,15 +38,16 @@
 			</button>
 
 			<nav id="head-nav-list">
-				<ul id="nav-ul">
-					<li class="nav-item"><a href="#">About</a></li>
-					<li class="nav-item"><a href="#">Products</a></li>
-					<li class="nav-item"><a href="#">Services</a></li>
-					<li class="nav-item"><a href="#">Parts</a></li>
-					<li class="nav-item"><a href="#">News</a></li>
-					<li class="nav-item"><a href="#">Contact</a></li>
-					<li class="nav-item"><a href="#">Installation Map</a></li>
-					<li class="nav-item"><a href="#">Product Literature</a></li>
+				<ul id="menu">
+					<li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+					<li class="item"><a href="#">About</a></li>
+					<li class="item"><a href="#">Products</a></li>
+					<li class="item"><a href="#">Services</a></li>
+					<li class="item"><a href="#">Parts</a></li>
+					<li class="item"><a href="#">News</a></li>
+					<li class="item"><a href="#">Contact</a></li>
+					<li class="item"><a href="#">Installation Map</a></li>
+					<li class="item"><a href="#">Product Literature</a></li>
 				</ul>
 			</nav>
 		</div> <!-- End of head-nav div -->
@@ -114,7 +116,7 @@
 				<img src="images/machine-04-912x834.png" alt="Photo of a Vulcan machine" srcset="images/machine-04-912x834.png 912w,
 				images/machine-04-768x702.png 768w,
 				images/machine-04-300x274.png 300w" sizes="(max-width: 1260px), 1200px">
-				<h3>SLUDGE THICKENING</h3>
+				<h3>Sludge Thickening</h3>
 			</div> <!-- END OF PRODUCT - 4 -->
 
 		</div> <!-- End of custom products div -->
@@ -237,6 +239,7 @@
 
 	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="scripts/index.js"></script>
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<script src="scripts/script.min.js?cb=1626986214711"></script>
 	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->

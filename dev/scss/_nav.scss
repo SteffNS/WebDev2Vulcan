@@ -1,0 +1,42 @@
+
+.body {
+    background-color: map-get($colors, body-bg);
+}
+
+nav {
+    //locally scoped variables 
+    $height: 40px;
+    $border: 1px solid #efefef;
+    box-shadow: $box-shadow;
+
+    .menu {
+        @include flex-column;
+        @include ul-base;
+    }
+
+    .item {
+        border-top: $border;
+        display: none;
+
+        a {
+            display: block;
+            height: $height;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: $line-height;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        .menu {
+            @include flex-row;
+
+            .item {
+                display: block;
+                border: none;
+                padding: 0 5%;
+            }
+        }
+    }
+}
