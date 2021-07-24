@@ -1,6 +1,6 @@
 //wasn't in the reset, but can feel free to delete this when it is included
 img, video, iframe {
-    max-width: 100%;
+    max-width: $img-full;
     height: auto;
 }
 
@@ -15,12 +15,14 @@ img, video, iframe {
 
 
         h3{
-            padding-bottom: 1rem;
-            font-weight: bold;
+            font-family: $header-font;
+            padding-bottom: $small-space;
+            font-weight: normal;
             color: map-get($colors, body-bg)
         }
+
         form{
-            padding: .5rem;
+            padding: $small-space/2;
 
 
             input[type='email'] {
@@ -51,15 +53,17 @@ img, video, iframe {
         img {
             position: relative;
         }
-        h4 {
+        h3 {
             z-index: 2;
-            transform: translate(8%, 450%);
+            bottom: -363%;
+            transform: translate(20%, 50%);
             color: map-get($colors, input-txt);
             position: absolute;
-            font-weight:bolder;
+            font-weight: $font-weight;
             text-transform: uppercase;
         }
         a {
+            
             display: block;
             position: absolute;
             transform: translate(15%, -200%);   
@@ -67,14 +71,14 @@ img, video, iframe {
             color:map-get($colors, input-txt);
             text-decoration: none;
             text-transform: uppercase;
-            padding: 1rem;
+            padding: $small-space;
             border: 1px solid map-get($colors, input-txt);
         }
     }
     section {
         text-transform: uppercase;
         z-index: 0;
-        padding: 2rem;
+        padding: $medium-space;
         background-color: map-get($colors, body-bg);
         color:white;
         text-align: center;
@@ -122,7 +126,6 @@ footer{
     // Given flex row align items center
     div{
         @include flex-layout-row;
-
 
         i {
             background-color: white;

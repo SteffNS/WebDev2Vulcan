@@ -1,9 +1,14 @@
 // fonts
-$header-font: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$txt-font:'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$header-font-size: 2rem;
-$line-height: 1.5;
+$header-font: 'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$txt-font:'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$header-font-size: 1.8rem;
+$sub-header-font-size: 1.6rem;
+$sub2-header-font-size: 1.4rem;
+$line-height: 1.3rem;
+$header-line-height: 2.2rem;
 $font-size: 1rem;
+$font-weight: bold;
+$text-transform: uppercase;
 
 // colours
 $colors: (
@@ -29,5 +34,6 @@ $img-full: 100%;
 $small-space: 1rem;
 $medium-space: 1.5rem;
 $large-space: 2rem;
+$extra-large-space: 4rem;
 $header-padding: 1rem 1rem 0;
 

@@ -1,0 +1,7 @@
+header {
+    @include flex-layout-row;
+
+    #top-logo {
+        width: 10%;
+    }
+}

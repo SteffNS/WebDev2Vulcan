@@ -56,3 +56,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     }
+
+ //for creating buttons
+ @mixin styled-button {
+        display: inline-block;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1rem;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        padding: 0.8rem 0.6rem;
+ }
