@@ -61,15 +61,7 @@ folders.jsDev = `${folders.dev}/${folders.scripts}`;
 folders.jsDistFolder = `${folders.dist}/${folders.scripts}`;
 folders.libsDev = `${folders.jsDev}/${folders.libs}`;
 folders.libsDist = `${folders.jsDistFolder}/${folders.libs}`;
-<<<<<<< HEAD
-=======
-folders.jsDev      = `${folders.dev}/${folders.scripts}`;
-folders.jsDistFolder     = `${folders.dist}/${folders.scripts}`;
-folders.libsDev    = `${folders.jsDev}/${folders.libs}`;
-folders.libsDist   = `${folders.jsDistFolder}/${folders.libs}`;
->>>>>>> b9b5dcd6aaf2a7a8dc3fb2cf13fb73ec32b6abd8
-=======
->>>>>>> eefcd186985f07cf3ea669340e4071a4f552cca7
+
 // jQuery Folders
 folders.jQueryDev = `${folders.libsDev}/${folders.jQuery}`;
 folders.jQueryDist = `${folders.libsDist}/${folders.jQuery}`;
