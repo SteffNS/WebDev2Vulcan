@@ -1,0 +1,11 @@
+header {
+    @include flex-layout-row;
+    justify-content: center;
+    #top-logo img {
+        width: 10%;
+    }
+}
+
+body {
+    background-color: red;
+}
