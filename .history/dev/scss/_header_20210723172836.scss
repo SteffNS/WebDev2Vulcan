@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    @include flex-row;
+    align-items: center;
+    // width: 100vw;
+    justify-content: space-between;
+    #top-logo img {
+        width: 20%;
+        margin: 0.8rem 0 0.8rem 1rem;
+    }
+    background-color: #0e0e0e78;
+}
+
+body {
+    background-color: red;
+    * {
+        max-width: 100vw;
+    }
+}

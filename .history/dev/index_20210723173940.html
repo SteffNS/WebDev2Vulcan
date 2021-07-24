@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vulcan</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<!-- end Google Fonts -->
+
+	<!-- font awesome link so I can use icons -->
+	<script src="https://kit.fontawesome.com/abe241795b.js" crossorigin="anonymous"></script>
+
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+	<header>
+		<div id="top-logo">
+			<img src="images/logo-white-vulcan.svg" alt="Vulcan logo - Vulcan the proven screen choice">
+		</div>
+
+		<div id="head-nav">
+			<!-- Button placeholder until I figure out the way Alex did it with the open animation -->
+			<button class='menu-toggle' aria-label="Menu Icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="fffff">
+					<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+				</svg>
+			</button>
+
+			<nav id="head-nav-list">
+				<ul id="nav-ul">
+					<li class="nav-item"><a href="#">About</a></li>
+					<li class="nav-item"><a href="#">Products</a></li>
+					<li class="nav-item"><a href="#">Services</a></li>
+					<li class="nav-item"><a href="#">Parts</a></li>
+					<li class="nav-item"><a href="#">News</a></li>
+					<li class="nav-item"><a href="#">Contact</a></li>
+					<li class="nav-item"><a href="#">Installation Map</a></li>
+					<li class="nav-item"><a href="#">Product Literature</a></li>
+				</ul>
+			</nav>
+		</div> <!-- End of head-nav div -->
+	</header>
+
+	<section id="header-slider">
+		<div id="gallery-container">
+			<div id="gallery">
+				<img src="images/header-slider-img-01.jpg" alt="Photo of machinery with a blue screen door effect">
+				<img src="images/header-slider-img-02.jpg"
+					alt="Photo of a man welding with a screen door effect on the image">
+				<img src="images/header-slider-img-03.jpg"
+					alt="Photo of two men working on machinery with a screen door effect on the image">
+			</div> <!-- end of gallery div -->
+		</div> <!-- End of gallery container div -->
+
+		<!-- Text and button overlay on the header slider -->
+		<div class="header-text">
+			<h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
+			<a href="#" class="styled-button">View Products</a>
+			<a href="#" class="styled-button">View Services</a>
+		</div>
+	</section> <!-- end of header-slider section -->
+
+	<div id="white-wave-bg wave">
+		<img src="images/wave-white.png" alt="White wave background">
+	</div>
+
+	<section id="customized">
+		<!-- changes from grey to blue goig from mobile to desktop -->
+		<h2>Customized Per Order</h2>
+
+		<p>Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening
+			products are either. We'll help determine exactly what you need.
+		</p>
+
+		<div id="custom-products">
+			<div id="product-1">
+				<img src="images/machine-01-912x834.png" alt="Photo of a Vulcan machine" srcset="images/machine-01-912x834.png 912w,
+				images/machine-01-768x702.png 768w,
+				images/machine-01-300x274.png 300w" sizes="(max-width: 1260px), 1200px">
+				<h3>Screening</h3>
+			</div> <!-- END OF PRODUCT - 1 -->
+
+			<hr>
+
+			<div id="product-2">
+				<img src="images/machine-02-912x834.png" alt="Photo of a second Vulcan machine" srcset="images/machine-02-912x834.png 912w,
+				images/machine-02-768x702.png 768w,
+				images/machine-02-300x274.png 300w" sizes="(max-width: 1260px), 1200px">
+				<h3>Screenings Handling</h3>
+			</div> <!-- END OF PRODUCT - 2 -->
+
+			<hr>
+
+			<div id="product-3">
+				<img src="images/machine-03-912x834.png" alt="Photo of a Vulcan machine" srcset="images/machine-03-912x834.png 912w,
+				images/machine-03-768x702.png 768w,
+				images/machine-03-300x274.png 300w" sizes="(max-width: 1260px), 1200px">
+				<h3>Grit Handling</h3>
+			</div> <!-- END OF PRODUCT - 3 -->
+
+			<hr>
+
+			<div id="product-4">
+				<img src="images/machine-04-912x834.png" alt="Photo of a Vulcan machine" srcset="images/machine-04-912x834.png 912w,
+				images/machine-04-768x702.png 768w,
+				images/machine-04-300x274.png 300w" sizes="(max-width: 1260px), 1200px">
+				<h3>SLUDGE THICKENING</h3>
+			</div> <!-- END OF PRODUCT - 4 -->
+
+		</div> <!-- End of custom products div -->
+	</section> <!-- End of customized section -->
+	<!-- second section of website -->
+
+	<section class="products">
+		<div class="wave">
+			<img src="images/wave-blue-dark.png" alt="blue dark wave">
+		</div>
+		<h2>Product Advisor</h2>
+		<h3>Find your project's perfect fit</h3>
+		<!-- start of selection product form -->
+		<form action="/" method="post" class="product-form">
+			<div class="form-group">
+				<label for="products-group">Product Type</label>
+				<select id="product-type" name="product-type">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Screen Location</label>
+				<select id="product-type" name="screen-location">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Flow Type</label>
+				<select id="product-type" name="flow-type">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Channel Depth</label>
+				<select id="product-type" name="channel-depth">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+				<label for="products-group">Channel Width</label>
+				<select id="product-type" name="channel-width">
+					<option value="Select">Select</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+					<option value="lorem ipsum">lorem ipsum</option>
+				</select>
+			</div>
+
+			<div class="form-group submit-btn">
+				<input type="submit" value="Find My Product">
+			</div>
+		</form>
+		<!--end of selection form -->
+	</section>
+	<section class="about">
+		<div class="header-text">
+			<!-- header needs to be transformed to uppercase in css -->
+			<h2>Delivering clean safe water since 1975. Refreshing indeed.</h2>
+			<h3>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more
+				than
+				900 cities and communities throughout the world.</h3>
+			<a class="styled-button" href="#about">About Us</a>
+		</div>
+	</section>
+	<section class="video">
+		<iframe src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0" width="640" height="360"
+			frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+	</section>
+
+	<!-- 3rd Section of the webpage, starting at "Stay in the know" and below -->
+	<!-- I used h3 and h4, but that can be changed depending on header order -->
+	<div>
+		<!-- header needs to be transformed to uppercase in css -->
+		<h3>Stay in the know. Sign up for our newsletter.</h3>
+		<form action="/">
+			<label for="email"></label>
+			<input id='email' type="email" placeholder="Enter your email"
+				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+			<input type="submit">
+		</form>
+
+		<div>
+			<img src="images/map.jpg" alt="Map of Southwest USA">
+			<h4>Installed in a city near you.</h4>
+			<a href="#">Find a vulcan install</a>
+		</div>
+
+		<section>
+			<!-- header needs to be transformed to uppercase in css -->
+			<h2>Ready to spec vulcan for your project?</h2>
+			<!-- Also has to be uppercase in css -->
+			<a href="mailto:#">Contact us</a>
+		</section>
+
+		<!-- Blue wave, for positioning later -->
+		<div class='wave'>
+			<img src="images/wave-blue-light.png" alt="Light blue wave for background">
+		</div>
+		<!-- Footer section, it looks like some of these icons are grouped up? Putting them in divs for now so they can be positioned later -->
+		<!-- added a background colour so logo was visible -->
+		<footer>
+			<img src="images/logo-white-vulcan.svg" alt="Vulcan company logo">
+
+			<div>
+				<img src="images/icon-white-facebook.png" alt="Facebook logo">
+				<img src="images/icon-white-linkedin.png" alt="Facebook logo">
+			</div>
+
+			<div>
+				<i class="fas fa-phone-alt"></i> +1 712-642-2755
+				<i class="fas fa-envelope"></i> Contact us
+			</div>
+			<p>Copyright 2017. All rights reserved</p>
+		</footer>
+	</div>
+
+	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<script src="scripts/script.min.js"></script>
+	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
+</body>
+
+</html>
