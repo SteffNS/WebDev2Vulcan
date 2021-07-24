@@ -15,6 +15,7 @@ img, video, iframe {
 
 
         h3{
+            font-size: $font-size;
             font-family: $header-font;
             padding-bottom: $small-space;
             font-weight: normal;
@@ -28,7 +29,7 @@ img, video, iframe {
             input[type='email'] {
                 padding: .25rem;
                 border: none;
-                width: 75%;
+                width: 65%;
             }
             // Styling for placeholder text
             ::placeholder{
@@ -49,43 +50,53 @@ img, video, iframe {
     }
     // Second div with the map background and link
     div:nth-child(2){
+        position: relative;
 
         img {
-            position: relative;
+            height: 35vh;
+            object-fit: cover;
         }
         h3 {
+            @include center-text;
+            text-align: center;
             z-index: 2;
-            bottom: -363%;
-            transform: translate(20%, 50%);
+            width: 10.625rem;
+            // transform: translate(30%, 207%);
             color: map-get($colors, input-txt);
-            position: absolute;
+            // position: absolute;
             font-weight: $font-weight;
             text-transform: uppercase;
         }
         a {
-            
+            @include center-text;
+            top: 67%;
             display: block;
-            position: absolute;
-            transform: translate(15%, -200%);   
-            z-index: 2;
+            text-align: center;
+            font-size: $font-size;
             color:map-get($colors, input-txt);
+            border: 2px solid map-get($colors, input-txt);
+            font-weight: $font-weight;
             text-decoration: none;
             text-transform: uppercase;
-            padding: $small-space;
-            border: 1px solid map-get($colors, input-txt);
+            width: 11.25rem;
+            font-size: $font-footer-size;
+            padding: $tiny-space;
         }
     }
     section {
         text-transform: uppercase;
-        z-index: 0;
-        padding: $medium-space;
+        padding: $medium-space 0;
         background-color: map-get($colors, body-bg);
         color:white;
         text-align: center;
+        padding-bottom: $large-space*2;
 
         h2{
             font-weight: bolder;
+            line-height: $header-line-height;
             padding: 2rem;
+            margin: 0 auto;
+            width: 22.75rem;
         }
         a{
             color: white;
@@ -101,37 +112,45 @@ img, video, iframe {
         transform: translate(0%,-70%);
     }
 }
-
 // Footer styles
 footer{
     // Reset margins, give display flex column
     @include margin-reset-0;
     @include flex-column;
 
+    padding: 0.7rem;
+    font-size: $font-footer-size;
+
     background-color: map-get($colors, secondary-body-bg);
+    // background-image: url(../images/wave-blue-light.png);
     color: white;
     text-align: center;
     text-transform: uppercase;
     padding: 2%;
 
     #symb-logo{
-        width: 25%;
-    }
-
-    div img, img {
-        width: 10%;
+        width: 35%;
+        padding: 1rem 0;
     }
 
     // Div within the footer that has social media and phone number
     // Given flex row align items center
     div{
         @include flex-layout-row;
+        justify-content: space-evenly;
 
+        // facebook and linkedin icon images
+        .icon{
+            width: 8%;
+        }
         i {
             background-color: white;
             color: map-get($colors, secondary-body-bg);
             border-radius: 50%;
             padding: .25rem;
         }
+    }
+    p{
+        line-height: $line-height * 2;
     }
 }

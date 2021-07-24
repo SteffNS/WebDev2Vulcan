@@ -7,6 +7,7 @@ $sub2-header-font-size: 1.4rem;
 $line-height: 1.3rem;
 $header-line-height: 2.2rem;
 $font-size: 1rem;
+$font-footer-size: 0.75rem;
 $font-weight: bold;
 $text-transform: uppercase;
 
@@ -31,6 +32,7 @@ $breakpoint-desktop: 1024px;
 $img-full: 100%;
 
 //spacing to use with margin or padding 
+$tiny-space: 0.6rem;
 $small-space: 1rem;
 $medium-space: 1.5rem;
 $large-space: 2rem;
