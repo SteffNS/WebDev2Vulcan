@@ -203,26 +203,25 @@
 
 	<!-- 3rd Section of the webpage, starting at "Stay in the know" and below -->
 	<!-- I used h3 and h4, but that can be changed depending on header order -->
-	<div>
-		<!-- header needs to be transformed to uppercase in css -->
-		<h3>Stay in the know. Sign up for our newsletter.</h3>
-		<form action="/">
-			<label for="email"></label>
-			<input id='email' type="email" placeholder="Enter your email"
-				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-			<input type="submit">
-		</form>
+	<div id='contact'>
+		<div>
+			<h3>Stay in the know. Sign up for our newsletter.</h3>
+			<form action="/">
+				<label for="email"></label>
+				<input id='email' type="email" placeholder="Enter your email"
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+				<input type="submit">
+			</form>
+		</div>
 
 		<div>
-			<img src="images/map.jpg" alt="Map of Southwest USA">
 			<h4>Installed in a city near you.</h4>
+			<img src="images/map.jpg" alt="Map of Southwest USA">
 			<a href="#">Find a vulcan install</a>
 		</div>
 
 		<section>
-			<!-- header needs to be transformed to uppercase in css -->
 			<h2>Ready to spec vulcan for your project?</h2>
-			<!-- Also has to be uppercase in css -->
 			<a href="mailto:#">Contact us</a>
 		</section>
 
@@ -233,14 +232,11 @@
 		<!-- Footer section, it looks like some of these icons are grouped up? Putting them in divs for now so they can be positioned later -->
 		<!-- added a background colour so logo was visible -->
 		<footer>
-			<img src="images/logo-white-vulcan.svg" alt="Vulcan company logo">
+			<img id='symb-logo' src="images/logo-white-vulcan.svg" alt="Vulcan company logo">
 
 			<div>
 				<img src="images/icon-white-facebook.png" alt="Facebook logo">
 				<img src="images/icon-white-linkedin.png" alt="Facebook logo">
-			</div>
-
-			<div>
 				<i class="fas fa-phone-alt"></i> +1 712-642-2755
 				<i class="fas fa-envelope"></i> Contact us
 			</div>
