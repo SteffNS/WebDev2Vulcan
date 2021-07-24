@@ -1,0 +1,12 @@
+header {
+    @include flex-layout-row;
+    width: 100%;
+    justify-content: center;
+    #top-logo img {
+        width: 10%;
+    }
+}
+
+body {
+    background-color: red;
+}

@@ -1,0 +1,11 @@
+header {
+    @include flex-layout-row;
+
+    #top-logo {
+        width: 40px;
+    }
+}
+
+body {
+    background-color: red;
+}
