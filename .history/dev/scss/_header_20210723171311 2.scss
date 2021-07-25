@@ -1,0 +1,12 @@
+header {
+    @include flex-layout-row;
+    display: flex;
+    justify-content: space-between;
+    #top-logo img {
+        width: 10%;
+    }
+}
+
+body {
+    background-color: red;
+}

@@ -4,8 +4,8 @@
     img {
         height: 37rem;
         object-fit: cover;
-        max-height: 100%;
-        max-width: 100%;
+        max-height: $img-full;
+        max-width: $img-full;
         vertical-align: middle;
     }
 
@@ -33,35 +33,28 @@
 // Text and buttons on top of image slider
 .header-text {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
-    h1{ 
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 1.8rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 2.2rem;
+    h1 { 
+        font-family: $header-font;
+        font-size: $header-font-size;
+        font-weight: $font-weight;
+        text-transform: $text-transform;
+        line-height: $header-line-height;
         color: #ffffff;
         width: 100vw;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: $small-space/2;
+        padding-right: $small-space/2;
         position: absolute;
         top: -450px;
         text-align: center;
     }
 
     .styled-button {
-        display: inline-block;
-        font-family: "Roboto", sans-serif;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 1rem;
-        border: 1px solid #ffffff;
-        color: #ffffff;
-        padding: 0.8rem 0.6rem;
+       @include styled-button;
     }
 
     #products-btn {
@@ -83,14 +76,15 @@
     }
 }
 
-#white-wave-bg {
+
+    #white-wave-bg {
 
     img {
         position: absolute;
         top: 550px;
-        height: 4rem;
+        height: $extra-large-space;
         object-fit: cover;
         object-position: -6rem;
     }
-}
+    }
 

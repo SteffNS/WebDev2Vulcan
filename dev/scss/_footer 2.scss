@@ -1,0 +1,137 @@
+//wasn't in the reset, but can feel free to delete this when it is included
+img, video, iframe {
+    max-width: $img-full;
+    height: auto;
+}
+
+// Div that contains the bottom third styling
+#contact{
+
+    // First div that has the email sign up form
+    div:nth-child(1) {
+        padding: 1.2rem 0;
+        text-align: center;
+        background-color: map-get($colors, third-body-bg);
+
+
+        h3{
+            font-family: $header-font;
+            padding-bottom: $small-space;
+            font-weight: normal;
+            color: map-get($colors, body-bg)
+        }
+
+        form{
+            padding: $small-space/2;
+
+
+            input[type='email'] {
+                padding: .25rem;
+                border: none;
+                width: 75%;
+            }
+            // Styling for placeholder text
+            ::placeholder{
+                padding: 2%;
+                font-size:10px;
+            }
+
+            input[type='submit'] {
+                outline: none;
+                border: none;
+                background-color: map-get($colors, secondary-body-bg);
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: .25rem .55rem;
+            }
+        }
+    }
+    // Second div with the map background and link
+    div:nth-child(2){
+
+        img {
+            position: relative;
+        }
+        h3 {
+            z-index: 2;
+            bottom: -363%;
+            transform: translate(20%, 50%);
+            color: map-get($colors, input-txt);
+            position: absolute;
+            font-weight: $font-weight;
+            text-transform: uppercase;
+        }
+        a {
+            
+            display: block;
+            position: absolute;
+            transform: translate(15%, -200%);   
+            z-index: 2;
+            color:map-get($colors, input-txt);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: $small-space;
+            border: 1px solid map-get($colors, input-txt);
+        }
+    }
+    section {
+        text-transform: uppercase;
+        z-index: 0;
+        padding: $medium-space;
+        background-color: map-get($colors, body-bg);
+        color:white;
+        text-align: center;
+
+        h2{
+            font-weight: bolder;
+            padding: 2rem;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid white;
+            padding: 0.5rem;
+        }
+    }
+    .wave{
+        position: absolute;
+        z-index: 3;
+        transform: translate(0%,-70%);
+    }
+}
+
+// Footer styles
+footer{
+    // Reset margins, give display flex column
+    @include margin-reset-0;
+    @include flex-column;
+
+    background-color: map-get($colors, secondary-body-bg);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2%;
+
+    #symb-logo{
+        width: 25%;
+    }
+
+    div img, img {
+        width: 10%;
+    }
+
+    // Div within the footer that has social media and phone number
+    // Given flex row align items center
+    div{
+        @include flex-layout-row;
+
+        i {
+            background-color: white;
+            color: map-get($colors, secondary-body-bg);
+            border-radius: 50%;
+            padding: .25rem;
+        }
+    }
+}
