@@ -72,3 +72,10 @@
  }
 
 
+@mixin wave-styling-mobile {
+    background-size: 220%;
+    background-position: 20% 100%;
+    background-repeat: no-repeat, no-repeat;
+    height: 8rem;
+}
+
