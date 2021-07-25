@@ -1,0 +1,18 @@
+#customized {
+    
+    
+    h2 {
+        margin: 2rem 5rem 0.5rem;
+        color: map-get($colors, header-grey);
+        font-style: $header-font;
+    }
+
+    h3 {
+        color: map-get($colors, header-grey);
+    }
+
+    p {
+        font-style: $txt-font;
+        margin: 0 2rem 1rem 2rem;
+    }
+}
