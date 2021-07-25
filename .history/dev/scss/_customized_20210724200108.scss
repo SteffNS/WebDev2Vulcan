@@ -10,17 +10,15 @@
 
     p {
         font-style: $txt-font;
-        margin: 0 2.4rem;
+        margin: 0 2.4rem 2rem;
         font-size: 0.9rem;
         line-height: normal;
     }
 
     hr {
         display: block;
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
-        height: 2px;
-        color: rgba(120, 119, 119, 0.674);
     }
 
     .product-container {
@@ -28,17 +26,15 @@
         justify-content: space-around;
 
         img {
-            width: 50%;
-            margin: 1rem 0 1rem 2rem;
+            width: 40%;
+            margin: 2rem;
         }
 
         h3 {
-            color: map-get($colors, input-txt);
-            width: 30%;
+            color: map-get($colors, header-grey);
+            width: 40%;
             text-align: left;
-            font-size: 1.2rem;
-            margin-right: 1.5rem;
-            text-transform: uppercase;
+            font-size: 1.5rem;
         }
     }
 }

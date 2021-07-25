@@ -1,0 +1,34 @@
+#customized {
+    
+    
+    h2 {
+        margin: 2rem 6rem 0.5rem;
+        color: map-get($colors, header-grey);
+        font-style: $header-font;
+
+    }
+
+    h3 {
+        color: map-get($colors, header-grey);
+    }
+
+    p {
+        font-style: $txt-font;
+        margin: 0 2.4rem 2rem;
+        font-size: 0.9rem;
+        line-height: normal;
+    }
+
+    .product-container {
+        @include flex-images;
+
+        img {
+            width: 50%;
+        }
+
+        h3 {
+            width: 50%;
+            text-align: left;
+        }
+    }
+}
