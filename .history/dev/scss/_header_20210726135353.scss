@@ -1,0 +1,139 @@
+body {
+
+    * {
+        max-width: 100vw;
+    }
+}
+
+#head-text-container {
+    display: none;
+}
+
+h1 {
+    font-family: $header-font;
+    text-transform: $text-transform;
+    color: white;
+}
+
+h2{
+    font-family: $header-font;
+    text-transform: $text-transform;
+    font-size: $sub-header-font-size;
+    font-weight: $font-weight;
+    color: white;
+    text-align: center;
+}
+
+h3  {
+    font-family: $header-font;
+    font-size: $sub-header-font-size;
+    font-weight: $font-weight;
+    color: map-get($colors, body-header);
+    text-align: center;
+}
+
+p {
+    font-family: $txt-font;
+    text-align: center;
+    line-height: $line-height;
+}
+
+header {
+    position: absolute;
+    z-index: 9998;
+    display: flex;
+    width: 100vw;
+    height: 71px;
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d2d2dcf;
+    max-height: 90px;
+
+    #top-logo img {
+        width: 6.5rem;
+        margin: 0.8rem 0 0.8rem 1rem;
+        max-height: 42px;
+    }
+
+}
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+
+    header {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        
+        #head-text-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+    
+            #head-text-left {
+                display: flex;
+                width: 50%;
+
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-family: $txt-font;
+                    margin: 0 2rem 0 2rem;
+                }
+            }
+        
+            #head-text-right {
+                display: flex;
+                width: 40%;
+                position: absolute;
+                top: 23px;
+                right: 0;
+                margin-left: 20rem;
+
+
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-family: $txt-font;
+                    margin: 0 2rem 0 0.5rem;
+                }
+
+                i {
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                    padding: 0.25rem;
+                }
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        #top-logo {
+            position: absolute;
+            z-index: 9999;
+            width: 12rem;
+            height: auto;
+            background-size: 160px 70px;
+            margin: 0 auto;
+            top: 40px;
+            left: 0;
+            right: 0;
+
+            img {
+                margin: 0;
+                width: 12rem;
+                height: 200px;
+            }
+        }
+    
+    }
+
+
+}
+
