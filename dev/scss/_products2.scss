@@ -1,7 +1,7 @@
 .wave {
     background-image: url('../images/wave-blue-dark.png');
     @include wave-styling-mobile;
-    height: 3rem;
+    height: 6rem;
     display: block;
 
     @media (min-width: $breakpoint-mobile){
@@ -18,7 +18,7 @@
         
 
         h2 {
-            font-size: $sub-header2-font-size;
+            font-size: $font-size;
             color: red;
       
         }
