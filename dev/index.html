@@ -33,27 +33,32 @@
 		</div>
 
 		<div id="head-nav">
-			<!-- Button placeholder until I figure out the way Alex did it with the open animation -->
-			<button class='menu-toggle' aria-label="Menu Icon">
-				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#ffffff">
-					<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-				</svg>
+
+			<button class='menu-toggle btn-menu' id="btn-menu">
+				<span class="button-content">
+					<span class="text">Menu</span>
+					<span class="bar"></span>
+				</span>
 			</button>
 
-			<nav id="head-nav-list">
-				<ul id="nav-ul">
-					<li class="nav-item"><a href="#">About</a></li>
-					<li class="nav-item"><a href="#">Products</a></li>
-					<li class="nav-item"><a href="#">Services</a></li>
-					<li class="nav-item"><a href="#">Parts</a></li>
-					<li class="nav-item"><a href="#">News</a></li>
-					<li class="nav-item"><a href="#">Contact</a></li>
-					<li class="nav-item"><a href="#">Installation Map</a></li>
-					<li class="nav-item"><a href="#">Product Literature</a></li>
-				</ul>
-			</nav>
 		</div> <!-- End of head-nav div -->
 	</header>
+	
+	<div id="nav-wrapper">
+		<nav id="head-nav-list">
+			<ul id="nav-ul">
+				<li class="nav-item"><a href="#">About</a></li>
+				<li class="nav-item"><a href="#">Products</a></li>
+				<li class="nav-item"><a href="#">Services</a></li>
+				<li class="nav-item"><a href="#">Parts</a></li>
+				<li class="nav-item"><a href="#">News</a></li>
+				<li class="nav-item"><a href="#">Contact</a></li>
+				<li class="nav-item"><a href="#">Installation Map</a></li>
+				<li class="nav-item"><a href="#">Product Literature</a></li>
+			</ul>
+		</nav>
+	</div>
+
 
 	<section id="header-slider">
 
@@ -92,7 +97,7 @@
 		</div>
 	</section> <!-- end of header-slider section -->
 
-	<div id="white-wave-bg" class="wave">
+	<div id="white-wave-bg" class="">
 		<img src="images/wave-white.png" alt="White wave background">
 	</div>
 
@@ -144,18 +149,14 @@
 	</section> <!-- End of customized section -->
 	<!-- second section of website -->
 
-
-	<div class="wave"></div>
 	<section class="products">
-
-		<div class="title-text">
-
-			<h2>Product Advisor</h2>
-			<h3>Find your project's perfect fit</h3>
+		<div class="wave">
+			<img src="images/wave-blue-dark.png" alt="blue dark wave">
 		</div>
+		<h2>Product Advisor</h2>
+		<h3>Find your project's perfect fit</h3>
 		<!-- start of selection product form -->
 		<form action="/" method="post" class="product-form">
-
 			<div class="form-group">
 				<div class="field-wrapper">
 					<label for="products-group">Product Type</label>
@@ -214,7 +215,7 @@
 				</div>
 
 			</div>
-
+				
 			<div class="form-group submit-btn">
 				<input type="submit" value="Find My Product">
 			</div>
@@ -259,23 +260,29 @@
 		</div>
 
 		<section>
-			<h2>Ready to spec<br />vulcan<br />for your project?</h2>
+			<h2>Ready to spec<br/>vulcan<br/>for your project?</h2>
 			<a href="mailto:#">Contact us</a>
+			<div class='wave'>
+				<!-- <img src="images/wave-blue-light.png" alt="Light blue wave for background"> -->
+			</div>
 		</section>
 
 		<!-- Blue wave, for positioning later -->
-		<div class='wave'>
-			<img src="images/wave-blue-light.png" alt="Light blue wave for background">
-		</div>
 	</div>
 	<footer>
 		<img id='symb-logo' src="images/logo-white-vulcan.svg" alt="Vulcan company logo">
 
-		<div>
-			<img class='icon' src="images/icon-white-facebook.png" alt="Facebook logo">
-			<img class='icon' src="images/icon-white-linkedin.png" alt="Facebook logo">
-			<i class="fas fa-phone-alt"></i> +1 712-642-2755
-			<i class="fas fa-envelope"></i> Contact us
+		<div id='footer-wrapper'>
+			<div>
+				<img class='icon' src="images/icon-white-facebook.png" alt="Facebook logo">
+				<img class='icon' src="images/icon-white-linkedin.png" alt="Facebook logo">
+			</div>
+			<div>
+				<i class="fas fa-phone-alt"></i> +1 712-642-2755
+			</div>
+			<div>
+				<i class="fas fa-envelope"></i> Contact us
+			</div>
 		</div>
 		<p>Copyright 2017. All rights reserved</p>
 	</footer>

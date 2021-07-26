@@ -17,8 +17,8 @@ img, video, iframe {
         h3{
             font-size: $font-size;
             font-family: $header-font;
-            padding-bottom: $small-space;
-            font-weight: normal;
+            padding-bottom: $tiny-space;
+            font-weight: $font-weight;
             color: map-get($colors, body-bg)
         }
 
@@ -38,13 +38,16 @@ img, video, iframe {
             }
 
             input[type='submit'] {
-                outline: none;
-                border: none;
-                background-color: map-get($colors, secondary-body-bg);
-                color: white;
-                text-transform: uppercase;
-                font-weight: bold;
-                padding: .25rem .55rem;
+                @include mobile-submit-button;
+
+                // Commented out just in case for now, will delete later
+                // outline: none;
+                // border: none;
+                // background-color: map-get($colors, secondary-body-bg);
+                // color: white;
+                // text-transform: uppercase;
+                // font-weight: bold;
+                // padding: .25rem .55rem;
             }
         }
     }
@@ -58,14 +61,16 @@ img, video, iframe {
         }
         h3 {
             @include center-text;
+            top:45%;
             text-align: center;
             z-index: 2;
-            width: 10.625rem;
+            width: 15rem;
             // transform: translate(30%, 207%);
             color: map-get($colors, input-txt);
             // position: absolute;
             font-weight: $font-weight;
             text-transform: uppercase;
+            overflow-wrap: anywhere;
         }
         a {
             @include center-text;
@@ -74,7 +79,7 @@ img, video, iframe {
             text-align: center;
             font-size: $font-size;
             color:map-get($colors, input-txt);
-            border: 2px solid map-get($colors, input-txt);
+            border: 1px solid map-get($colors, input-txt);
             font-weight: $font-weight;
             text-decoration: none;
             text-transform: uppercase;
@@ -85,18 +90,19 @@ img, video, iframe {
     }
     section {
         text-transform: uppercase;
-        padding: $medium-space 0;
+        padding: $medium-space 0 0;
         background-color: map-get($colors, body-bg);
         color:white;
         text-align: center;
-        padding-bottom: $large-space*2;
+        // padding-bottom: $large-space*2;
 
         h2{
             font-weight: bolder;
             line-height: $header-line-height;
-            padding: 2rem;
+            padding: 2rem 0;
             margin: 0 auto;
             width: 22.75rem;
+            overflow-wrap: break-word;
         }
         a{
             color: white;
@@ -105,52 +111,63 @@ img, video, iframe {
             border: 1px solid white;
             padding: 0.5rem;
         }
-    }
-    .wave{
-        position: absolute;
-        z-index: 3;
-        transform: translate(0%,-70%);
+        .wave{
+            @include wave-styling-mobile;
+            background-position: 20% 101%;
+            height: 6.5rem;
+            background-image: url(../images/wave-blue-light.png);
+        }
     }
 }
 // Footer styles
 footer{
-    // Reset margins, give display flex column
+    // Reset margins, give display flex 
     @include margin-reset-0;
-    @include flex-column;
-
-    padding: 0.7rem;
-    font-size: $font-footer-size;
+    font-size: $font-footer-size-2;
 
     background-color: map-get($colors, secondary-body-bg);
     // background-image: url(../images/wave-blue-light.png);
     color: white;
     text-align: center;
     text-transform: uppercase;
-    padding: 2%;
+
 
     #symb-logo{
         width: 35%;
         padding: 1rem 0;
     }
 
-    // Div within the footer that has social media and phone number
+    // Div within the footer that has divs which has social media and phone number
     // Given flex row align items center
-    div{
+    #footer-wrapper{
         @include flex-layout-row;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
+        flex-wrap: nowrap;
 
-        // facebook and linkedin icon images
-        .icon{
-            width: 8%;
+        div{
+            width: 100%;
+            // display: flex;
+            // flex-wrap: nowrap;
+            // align-items: center;
+            // justify-content: space-evenly;
+
+            // facebook and linkedin icon images
+            .icon{
+                // margin: 0.15rem;
+                max-width: 30%;
+            }
+            i {
+                background-color: white;
+                color: map-get($colors, secondary-body-bg);
+                border-radius: 50%;
+                padding: .25rem;
+                margin: 0 .05rem;
+            }
         }
-        i {
-            background-color: white;
-            color: map-get($colors, secondary-body-bg);
-            border-radius: 50%;
-            padding: .25rem;
-        }
+
     }
     p{
         line-height: $line-height * 2;
+        padding-bottom: $tiny-space ;
     }
 }

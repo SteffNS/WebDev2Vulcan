@@ -1,0 +1,123 @@
+.menu-toggle {
+    
+    .text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    .bar {
+        z-index: 9999;
+        display: block;
+        height: 4px;
+        background-color: #ffffff;
+        width: 3rem;
+        position: relative;
+        top: 10px;
+        transition: all 0.3s ease-in-out;
+
+        &:before {
+            content: "";
+            z-index: 9999;
+            width: 3rem;
+            height: 4px;
+            top: 10px;
+            left: 0;
+            background-color: #ffffff;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:after {
+            content: "";
+            z-index: 9999;
+            width: 3rem;
+            height: 4px;
+            top: -10px;
+            left: 0;
+            background-color: #ffffff;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.openMenu .btn-menu .bar {
+    background-color: transparent;
+}
+
+.openMenu .btn-menu .bar:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.openMenu .btn-menu .bar:after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.menu-toggle {
+    margin-right: 0.8rem;
+    // border: none;
+    // background-color: transparent;
+
+}
+
+#nav-wrapper {
+    position: absolute;
+    top: 71px;
+    z-index: 9999;
+    width: 100vw;
+    height: 128px;
+    overflow: hidden;
+    height: 1px;
+    transition: height $animation-menu;
+
+    &.openNav {
+        height: 262px;
+    }
+
+    #head-nav-list {
+        position: absolute;
+        // top: 71px;
+        z-index: 9999;
+        overflow: hidden;
+        width: 100vw;
+        transition:$animation-menu;
+        transform: translateY(-100%);
+        background-color: #2d2d2dcf;
+        padding-bottom: 1rem;
+    
+        #nav-ul {
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-family: $header-font;
+                font-size: 1.4rem;
+                margin-left: 1rem;
+                line-height: 2rem;
+            }
+        }
+        
+        .menu-toggle {
+            margin-right: 0.8rem;
+            border: none;
+            background-color: transparent;
+        }
+    
+        &.openMenu {
+            transform: translateY(0);
+        }
+    }
+}
