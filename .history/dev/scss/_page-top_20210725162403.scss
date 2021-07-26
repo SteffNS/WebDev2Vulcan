@@ -1,0 +1,92 @@
+#carouselExampleIndicators {
+    position: relative;
+
+    img {
+        height: 37rem;
+        object-fit: cover;
+        max-height: $img-full;
+        max-width: $img-full;
+        vertical-align: middle;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 30px;
+    }
+
+    button {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    .active {
+        background-color: #419bd6;
+    }
+}
+
+#header-slider {
+    position: relative;
+}
+
+// Text and buttons on top of image slider
+.header-text {
+    position: relative;
+    @include flex-center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    h1 { 
+        font-family: $header-font;
+        font-size: $header-font-size;
+        font-weight: $font-weight;
+        text-transform: $text-transform;
+        line-height: $header-line-height;
+        color: #ffffff;
+        width: 100vw;
+        padding-left: $small-space/2;
+        padding-right: $small-space/2;
+        position: absolute;
+        top: -450px;
+        text-align: center;
+    }
+
+    .styled-button {
+       @include styled-button;
+    }
+
+    #products-btn {
+        display: inline-block;
+        position: absolute;
+        top: -240px;
+        width: auto;
+        white-space: nowrap;
+        // text-align: center;
+
+    }
+
+    #services-btn {
+        position: absolute;
+        top: -175px;
+        width: auto;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+
+    #white-wave-bg {
+        background-image: url('../images/wave-blue-dark.png');
+        @include wave-styling-mobile;
+        
+    // img {
+    //     position: absolute;
+    //     top: 550px;
+    //     height: $extra-large-space;
+    //     object-fit: cover;
+    //     object-position: -6rem;
+    // }
+    }
+

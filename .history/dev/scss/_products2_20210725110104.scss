@@ -1,0 +1,93 @@
+.wave {
+    background-image: url('../images/wave-blue-dark.png');
+    @include wave-styling-mobile;
+}
+.products {
+    padding: $small-space/2;
+    background-color: map-get($colors, body-bg );
+    
+    .title-text {
+        border-bottom: 1px white solid;
+        padding: $small-space;
+    }
+
+    h3 {
+        color: white;
+        font-family: $txt-font;
+        font-weight: normal;
+        font-size: $sub3-header-font-size;
+        padding: $small-space;
+    }
+
+    .form-group {
+        padding: $medium-space;
+        
+        .field-wrapper {
+
+            label {
+                font-family: $header-font;
+                font-weight: $font-weight;
+                text-align: left;
+                padding: $medium-space 0 $small-space/2 0;
+                color: white;
+                font-size: $sub2-header-font-size;
+            }
+        
+            select {
+            border: 0;
+            background-color: map-get($colors, input-color );
+            display: block;
+            width: 100%;
+            font-size: $sub3-header-font-size;
+            font-family: $txt-font;
+            color: map-get($colors, input-txt);
+            padding: 0.8rem 0 0.8rem 0;
+            appearance: none;
+            
+            /* inline SVG */
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23424242%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A");
+            background-position: right 10px center;
+            background-repeat: no-repeat;
+            background-size: auto 50%;
+            border-radius:2px;
+            border:none;
+            // color: #ffffff;
+            padding: 10px 30px 10px 10px;
+            // disable default appearance
+            outline: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            &::-ms-expand { display: none };
+            }
+            // background-image:
+            // linear-gradient(45deg, transparent 50%, gray 50%),
+            // linear-gradient(135deg, gray 50%, transparent 50%),
+            // linear-gradient(to right, #ccc, #ccc);
+            // background-position:
+            // calc(100% - 20px) calc(1em + 2px),
+            // calc(100% - 15px) calc(1em + 2px),
+            // calc(100% - 2.5em) 0.5em;
+            // background-size:
+            // 5px 5px,
+            // 5px 5px,
+            // 1px 1.5em;
+            // background-repeat: no-repeat;
+            
+            
+            
+            .product-type {
+                background-color: map-get($colors, input-color2 );
+            }
+            
+        }
+    
+    }
+
+    
+}
+
+
+
+
+
