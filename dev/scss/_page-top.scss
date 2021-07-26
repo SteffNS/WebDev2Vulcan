@@ -28,6 +28,18 @@
 
 #header-slider {
     position: relative;
+
+    #white-wave-bg {
+        background-image: url('../images/wave-white.png');
+        @include wave-styling-mobile;  
+        position: absolute;
+        top: 545px;
+        height: 5rem;
+        width: 100vw;
+        @media (min-width: $breakpoint-mobile){
+            @include wave-styling-tablet;
+        }
+    }
 }
 
 // Text and buttons on top of image slider
@@ -64,7 +76,6 @@
         width: auto;
         white-space: nowrap;
         // text-align: center;
-
     }
 
     #services-btn {
@@ -74,17 +85,5 @@
         text-align: center;
         white-space: nowrap;
     }
+
 }
-
-
-    #white-wave-bg {
-        
-        img {
-            position: absolute;
-            top: 550px;
-            height: $extra-large-space;
-            object-fit: cover;
-            object-position: -6rem;
-        }
-    }
-
