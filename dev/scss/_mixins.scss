@@ -79,3 +79,13 @@
     height: 8rem;
 }
 
+@mixin mobile-submit-button {
+    font-family: $txt-font;
+    outline: none;
+    border: none;
+    background-color: map-get($colors, secondary-body-bg);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .35rem .55rem;
+}
