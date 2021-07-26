@@ -1,8 +1,4 @@
 //wasn't in the reset, but can feel free to delete this when it is included
-img, video, iframe {
-    max-width: $img-full;
-    height: auto;
-}
 
 // Div that contains the bottom third styling
 #contact{
@@ -14,11 +10,11 @@ img, video, iframe {
         background-color: map-get($colors, third-body-bg);
 
 
-        h3{
+        p{
             font-size: $font-size;
             font-family: $header-font;
             padding-bottom: $tiny-space;
-            font-weight: $font-weight;
+            // font-weight: $font-weight;
             color: map-get($colors, body-bg)
         }
 
@@ -33,6 +29,7 @@ img, video, iframe {
             }
             // Styling for placeholder text
             ::placeholder{
+                font-family: $txt-font;
                 padding: 2%;
                 font-size:10px;
             }
@@ -66,24 +63,24 @@ img, video, iframe {
             z-index: 2;
             width: 15rem;
             // transform: translate(30%, 207%);
-            color: map-get($colors, input-txt);
+            color: map-get($colors, body-header);
             // position: absolute;
-            font-weight: $font-weight;
+            // font-weight: $font-weight;
             text-transform: uppercase;
             overflow-wrap: anywhere;
         }
         a {
             @include center-text;
+            font-family: $txt-font;
             top: 67%;
             display: block;
             text-align: center;
-            font-size: $font-size;
-            color:map-get($colors, input-txt);
-            border: 1px solid map-get($colors, input-txt);
+            color:map-get($colors, body-header);
+            border: 1px solid map-get($colors, body-header);
             font-weight: $font-weight;
             text-decoration: none;
             text-transform: uppercase;
-            width: 11.25rem;
+            width: 10.25rem;
             font-size: $font-footer-size;
             padding: $tiny-space;
         }
@@ -94,7 +91,8 @@ img, video, iframe {
         background-color: map-get($colors, body-bg);
         color:white;
         text-align: center;
-        // padding-bottom: $large-space*2;
+        position: relative;
+        padding-bottom: $extra-large-space*1.5;
 
         h2{
             font-weight: bolder;
@@ -105,17 +103,26 @@ img, video, iframe {
             overflow-wrap: break-word;
         }
         a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border: 1px solid white;
-            padding: 0.5rem;
+            @include styled-button;
+            
+            // color: white;
+            // text-decoration: none;
+            // font-weight: bold;
+            // border: 1px solid white;
+            // padding: 0.5rem;
         }
         .wave{
             @include wave-styling-mobile;
             background-position: 20% 101%;
-            height: 6.5rem;
+            position: absolute;
+            width: 100vw;
+            top: 270px;
+            // padding-top: $large-space*2;
+            height: 4rem;
             background-image: url(../images/wave-blue-light.png);
+            @media (min-width: $breakpoint-mobile){
+                @include wave-styling-tablet;
+            }
         }
     }
 }

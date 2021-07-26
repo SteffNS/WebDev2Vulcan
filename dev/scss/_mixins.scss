@@ -61,7 +61,7 @@
  //for creating buttons
  @mixin styled-button {
         display: inline-block;
-        font-family: "Roboto", sans-serif;
+        font-family: $txt-font;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
@@ -73,10 +73,14 @@
 
 
  @mixin wave-styling-mobile {
-    background-size: 220%;
+    background-size: cover;
     background-position: 20% 100%;
     background-repeat: no-repeat, no-repeat;
-    height: 8rem;
+    
+}
+
+@mixin wave-styling-tablet {
+    background-size: contain;
 }
 
 

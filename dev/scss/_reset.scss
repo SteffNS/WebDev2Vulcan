@@ -129,6 +129,11 @@ table {
     border-spacing: 0;
 }
 
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 //add the natural box layout model to all elements:
 * {
     -moz-box-sizing: border-box;
