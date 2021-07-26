@@ -64,7 +64,7 @@
         font-family: "Roboto", sans-serif;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 1rem;
         border: 1px solid #ffffff;
         color: #ffffff;
@@ -72,12 +72,13 @@
  }
 
 
-@mixin wave-styling-mobile {
+ @mixin wave-styling-mobile {
     background-size: 220%;
     background-position: 20% 100%;
     background-repeat: no-repeat, no-repeat;
     height: 8rem;
 }
+
 
 @mixin mobile-submit-button {
     font-family: $txt-font;
@@ -89,3 +90,4 @@
     font-weight: bold;
     padding: .35rem .55rem;
 }
+

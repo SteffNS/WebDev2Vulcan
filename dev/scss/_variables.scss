@@ -2,11 +2,12 @@
 $header-font: 'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
 $txt-font:'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
 $header-font-size: 1.8rem;
-$sub-header-font-size: 2rem;
+$sub-header-font-size: 1.7rem;
 $sub2-header-font-size: 1.4rem;
 $sub3-header-font-size: 1.2rem;
-$line-height: 1.3rem;
+$line-height: 1.4rem;
 $header-line-height: 2.2rem;
+$h2-line-height: 2.5rem;
 $font-size: 1rem;
 $font-footer-size: 0.75rem;
 $font-footer-size-2: 0.7rem;
@@ -16,8 +17,8 @@ $animation-menu: 0.5s;
 
 // colours
 $colors: (
-    body-bg: #244963,
-    secondary-body-bg:#429bd6,
+    body-bg: #154a66,
+    secondary-body-bg:#009ddc,
     third-body-bg: #bedcef,
     body-header: #555555,
     input-color: #bbbbbb,
