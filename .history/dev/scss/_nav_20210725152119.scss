@@ -1,0 +1,46 @@
+.menu-toggle {
+    margin-right: 0.8rem;
+    border: none;
+    background-color: transparent;
+}
+
+#head-nav-list {
+    position: absolute;
+    // top: 71px;
+    z-index: 9999;
+    overflow: hidden;
+    width: 100vw;
+    transition:$animation-menu;
+    transform: translateY(-100%);
+    border: solid red;
+
+    #nav-ul {
+        // display: none;
+    }
+    
+    .menu-toggle {
+        margin-right: 0.8rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    &.openMenu {
+        transform: translateY(0);
+    }
+}
+
+#nav-wrapper {
+    position: absolute;
+    top: 71px;
+    z-index: 9999;
+    width: 100vw;
+    height: 128px;
+    overflow: hidden;
+    height: 1px;
+    transition: height $animation-menu;
+    border: solid blue;
+
+    &.openNav {
+        height: 128px;
+    }
+}
