@@ -1,0 +1,59 @@
+.about{
+    position: relative;
+    &.bg {
+    background-image: url('../images/bg-section-about-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 10rem 2rem;
+}
+
+.header-text {
+    line-height: $large-space;
+
+
+}
+p {
+    color: white;
+    padding:$large-space $large-space;
+    margin: 0 1rem;
+
+}
+.styled-button{
+    padding: 0.2rem $medium-space;
+    margin: $small-space;
+    position: absolute;
+    bottom: -30%;
+}
+}
+
+.video {
+    background-color: map-get($colors , secondary-body-bg );
+    padding: $extra-large-space;
+    
+    .banner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        background-color: green;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: map-get($colors , body-bg ) 1rem solid;
+        }
+
+    }
+        
+        
+
+       
+
+   
+}
