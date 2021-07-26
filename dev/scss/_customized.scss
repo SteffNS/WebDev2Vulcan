@@ -1,9 +1,10 @@
+
 #customized {
     
     
     h2 {
         margin: 2rem 6rem 0.5rem;
-        color: map-get($colors, header-grey);
+        color: map-get($colors, body-header);
         font-style: $header-font;
         text-align: center;
 
@@ -34,7 +35,7 @@
         }
 
         h3 {
-            color: map-get($colors, input-txt);
+            color: map-get($colors, body-header);
             width: 30%;
             text-align: left;
             font-size: 1.2rem;
