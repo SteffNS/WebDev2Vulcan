@@ -92,6 +92,12 @@
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    padding: .35rem .55rem;
+    padding: .55rem;
 }
+
+@mixin tablet-submit-button{
+    background-color: map-get($colors,secondary-body-bg);
+    color:white;
+    border:none;
+};
 
