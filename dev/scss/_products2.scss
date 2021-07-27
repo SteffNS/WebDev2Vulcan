@@ -4,9 +4,13 @@
     height: 6rem;
     display: block;
 
-    @media (min-width: $breakpoint-mobile){
+    @media (min-width: $breakpoint-tablet){
         @include wave-styling-tablet;
+      
     }
+
+ 
+    
 }
 .products {
     padding: $small-space;
@@ -16,26 +20,52 @@
         border-bottom: 1px white solid;
         padding: $small-space;
         
+        @media (min-width: $breakpoint-tablet){
+            padding: 0;
+            padding-bottom: $small-space;
+            }
 
         h2 {
-            font-size: $font-size;
-            color: red;
-      
+            font-size: $header-font-size;
+
         }
+
         p {
             color: white;
             font-family: $txt-font;
             font-weight: normal;
             font-size: $font-size;
             padding: $small-space;
+
+            @media (min-width: $breakpoint-tablet){
+            font-size: $sub2-header-font-size;
+            color: map-get($colors, secondary-body-bg );
+            }
+
         }
     }
 
     .form-group {
         padding-bottom: 6rem;
         position: relative;
+            
+        @media (min-width: $breakpoint-tablet){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.25rem;
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: .7rem;
+        }
+            
+        
         
         .field-wrapper {
+            
             label {
                 font-family: $header-font;
                 font-weight: $font-weight;
@@ -46,34 +76,55 @@
             }
         
             select {
-            border: 0;
-            background-color: map-get($colors, input-color );
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            font-size: $sub3-header-font-size;
-            font-family: $txt-font;
-            color: map-get($colors, input-txt);
-            padding: 1rem 1rem;
-            appearance: none;
-            // arrow styling
-            background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 5'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bopacity:0.79;%7D.cls-2%7Bfill:%23646464;fill-rule:evenodd;%7D%3C/style%3E%3C/defs%3E%3Cg class='cls-1'%3E%3Cpolygon class='cls-2' points='0 0 5 5 10 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
-            background-position: right 15px center;
-            background-repeat: no-repeat;
-            background-size: auto 18%;
-            // disable default appearance
-            outline: none;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            appearance: none;
-            &::-ms-expand { display: none };
-           
-            &:hover {
-                background-color: map-get($colors, input-color2 );
+                border: 0;
+                background-color: map-get($colors, input-color );
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                font-size: $sub3-header-font-size;
+                font-family: $txt-font;
+                color: map-get($colors, input-txt);
+                padding: 1rem 1rem;
+                appearance: none;
+                // arrow styling
+                background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 5'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bopacity:0.79;%7D.cls-2%7Bfill:%23646464;fill-rule:evenodd;%7D%3C/style%3E%3C/defs%3E%3Cg class='cls-1'%3E%3Cpolygon class='cls-2' points='0 0 5 5 10 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+                background-position: right 15px center;
+                background-repeat: no-repeat;
+                background-size: auto 18%;
+                // disable default appearance
+                outline: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                &::-ms-expand { display: none };
+            
+            @media (min-width: $breakpoint-tablet) {
+                font-size: $font-size;
+                background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4.5 4.4'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23009ddc;fill-rule:evenodd;%7D%3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='0 0 2.3 4.4 4.5 0 0 0'/%3E%3C/svg%3E");
+                background-size: auto 22%;
+                }
+
+            option {
+                padding: 1rem;
+
+                @media (min-width: $breakpoint-tablet){
+                    font-size: $font-size;
+                    // fill:map-get($colors, secondary-body-bg ) 
+                    }
             }
-            }             
+            
+            @media (min-width: $breakpoint-desktop){
+                padding: .8rem 8rem 1rem .8rem;
+            }
+          
+            }
+           
+            .product-type {
+                background-color: map-get($colors, input-color2 );
+            }            
            
         }
+
         input[type='submit'] {
             font-family: $txt-font;
             font-size: $sub3-header-font-size;
@@ -93,6 +144,12 @@
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+        }
+        
+        .submit-button {
+        @media (min-width: $breakpoint-tablet){
+            padding: $large-space;
+            }
         }
     }
    
