@@ -34,9 +34,9 @@
                 height: 2.1rem;
 
                 @media(min-width:$breakpoint-tablet){
-                    margin: 0 0.25rem;
+                    margin: 0 0.5rem;
                     height: 1.8rem;
-                    width: 35%;
+                    width: 40%;
                 }
 
                 @media(min-width:$breakpoint-desktop){
@@ -70,14 +70,14 @@
     div:nth-child(2){
         position: relative;
 
-        @media(min-width:$breakpoint-tablet){
+            @media(min-width:$breakpoint-tablet){
             width:50%;
             order:2;
             float: right;
-        }
+            }
 
         img {
-            height: 35vh;
+            height: 37vh;
             width: 100vw;
             object-fit: cover;
 
@@ -95,9 +95,9 @@
             color: map-get($colors, body-header);
             text-transform: uppercase;
 
-            @media(min-width:$breakpoint-desktop) {
-                top:43%;
-                left: 41%;
+            @media(min-width:$breakpoint-desktop){
+                top: 34%;
+                left: 50%;
             }
 
             span {
@@ -108,7 +108,7 @@
         a {
             @include center-text;
             font-family: $txt-font;
-            top: 67%;
+            top: 64%;
             display: block;
             text-align: center;
             color:map-get($colors, body-header);
@@ -124,10 +124,9 @@
                 @include tablet-submit-button;
                 top:62%;
             }
-
-            @media(min-width:$breakpoint-desktop) {
-                left:41%;
-                top: 70%;
+            @media(min-width:$breakpoint-desktop){
+                left: 50%;
+                top:70%;
             }
         }
     }
@@ -196,13 +195,7 @@
 
             @media(min-width: $breakpoint-tablet) {
                 @include wave-styling-tablet;
-
-                //DELETE after mixin update
-                background-size: 100% 100%;
-            }
-
-            @media(min-width:$breakpoint-desktop) {
-                height: 75px;
+                height:80px;
             }
         }
     }
@@ -212,6 +205,8 @@
 footer {
     // Reset margins, give display flex 
     @include margin-reset-0;
+
+    font-family: $txt-font;
     font-size: $font-footer-size-2;
     background-color: map-get($colors, secondary-body-bg);
     color: white;
@@ -223,7 +218,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0.7rem 2rem;
+        padding: 1.2rem 2rem;
         margin-top:-13px;
     }
 
@@ -240,8 +235,8 @@ footer {
             margin: 0 4rem;
             width:20%;
         }
-
-        @media(min-width: $breakpoint-desktop) {
+        @media(min-width: $breakpoint-desktop){
+            padding-top:3rem;
             max-width: 15%;
             margin-right: 15%;
         }
@@ -249,9 +244,12 @@ footer {
         @media(min-width: 1250px) {
             margin-right: 28%;
         }
-
-        @media(min-width: 1500px) {
+        @media(min-width: 1500px){
+            padding-top:4rem;
             margin-right: 31%;
+        }
+        @media(min-width:1920px){
+            margin-right: 47%;
         }
     }
 
@@ -259,28 +257,25 @@ footer {
     // Given flex row align items center
     #footer-wrapper {
         @include flex-layout-row;
-        // justify-content: space-evenly;
         flex-wrap: nowrap;
 
-
-        // @media(min-width:$breakpoint-desktop){
-        //     margin-left: 2rem;
-        // }
+        //footer-wrapper media query
+        @media(min-width: $breakpoint-desktop){
+            padding-top:3rem;
+        }
+        @media(min-width: 1500px){
+            padding-top:4rem;
+        }
 
         div {
             width: 100%;
-            // display: flex;
-            // flex-wrap: nowrap;
-            // align-items: center;
-            // justify-content: space-evenly;
 
             @media(min-width:$breakpoint-tablet) {
                 max-width: 12.2rem;
             }
 
             // facebook and linkedin icon images
-            .icon {
-                // margin: 0.15rem;
+            .icon{
                 max-width: 18%;
 
                 @media(min-width:$breakpoint-tablet){
@@ -315,6 +310,10 @@ footer {
             @include margin-reset-0;
             flex: 1;
             text-align: initial;
+            padding-top:3rem;
+        }
+        @media(min-width: 1500px){
+            padding-top:4rem;
         }
     }
 }
