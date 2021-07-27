@@ -1,5 +1,5 @@
 // Div that contains the bottom third styling
-#contact{
+#contact {
 
     // First div that has the email sign up form
     div:nth-child(1) {
@@ -8,8 +8,7 @@
         background-color: map-get($colors, third-body-bg);
 
 
-
-        p{
+        p {
             font-size: $font-size;
             font-family: $header-font;
             padding-bottom: $tiny-space;
@@ -20,7 +19,7 @@
             }
         }
 
-        form{
+        form {
             padding: $small-space/2;
 
             @media(min-width:$breakpoint-tablet){
@@ -33,11 +32,13 @@
                 border: none;
                 width: 65%;
                 height: 2.1rem;
+
                 @media(min-width:$breakpoint-tablet){
                     margin: 0 0.5rem;
                     height: 1.8rem;
                     width: 40%;
                 }
+
                 @media(min-width:$breakpoint-desktop){
                     width: 25%;
                 }
@@ -64,6 +65,7 @@
             }
         }
     }
+
     // Second div with the map background and link
     div:nth-child(2){
         position: relative;
@@ -83,9 +85,9 @@
                 width: 100%;
             }
         }
+
         h3 {
             @include center-text;
-
             top:45%;
             text-align: center;
             z-index: 2;
@@ -98,13 +100,13 @@
                 left: 50%;
             }
 
-            span{
+            span {
                 display: block;
             }
         }
+
         a {
             @include center-text;
-
             font-family: $txt-font;
             top: 64%;
             display: block;
@@ -118,7 +120,7 @@
             font-size: $font-footer-size;
             padding: $tiny-space;
 
-            @media(min-width:$breakpoint-tablet){
+            @media(min-width:$breakpoint-tablet) {
                 @include tablet-submit-button;
                 top:62%;
             }
@@ -128,6 +130,7 @@
             }
         }
     }
+
     section {
         text-transform: uppercase;
         padding: $medium-space 0 0;
@@ -137,25 +140,28 @@
         position: relative;
         padding-bottom: $extra-large-space*1.5;
 
-        @media(min-width:$breakpoint-tablet){
+        @media(min-width:$breakpoint-tablet) {
             width: 50%;
             order:1;
         }
 
-        h2{
-            font-weight: bolder;
+        h2 {
+            font-weight: bold;
             line-height: $header-line-height;
-            padding: 2rem 0;
+            padding: $large-space 0;
             margin: 0 auto;
             width: 22.75rem;
             overflow-wrap: break-word;
+            
             span{
                 display: block;
             }
-            @media(min-width:$breakpoint-tablet){
+            
+            @media(min-width:$breakpoint-tablet) {
                 padding: 1.5rem 0;
             }
-            @media(min-width:$breakpoint-desktop){
+
+            @media(min-width:$breakpoint-desktop) {
                     padding: 2.5rem 0;
                     margin: 0.625rem auto;
                 span:nth-child(1){
@@ -163,16 +169,17 @@
                 }
             }  
         }
-        a{
+
+        a {
             @include styled-button;
             
             @media(min-width:$breakpoint-tablet){
                 @include tablet-submit-button;
             }
         }
+
         .wave{
             @include wave-styling-mobile;
-
             background-position: 20% 101%;
             position: absolute;
             width: 100vw;
@@ -180,29 +187,27 @@
             height: 4rem;
             background-image: url(../images/wave-blue-light.png);
 
-            @media (min-width: $breakpoint-tablet){
+            @media (min-width: $breakpoint-tablet) {
                 @include wave-styling-tablet;
-
                 top:257px;
                 height: 60px;
             }
-            @media(min-width: $breakpoint-tablet){
+
+            @media(min-width: $breakpoint-tablet) {
                 @include wave-styling-tablet;
-
-
                 height:80px;
             }
         }
     }
 }
+
 // Footer styles
-footer{
+footer {
     // Reset margins, give display flex 
     @include margin-reset-0;
 
     font-family: $txt-font;
     font-size: $font-footer-size-2;
-
     background-color: map-get($colors, secondary-body-bg);
     color: white;
     text-align: center;
@@ -222,13 +227,11 @@ footer{
         align-items: center;
     }
 
-
-
-    #symb-logo{
+    #symb-logo {
         width: 35%;
         padding: 1rem 0;
 
-        @media(min-width: $breakpoint-tablet){
+        @media(min-width: $breakpoint-tablet) {
             margin: 0 4rem;
             width:20%;
         }
@@ -237,7 +240,8 @@ footer{
             max-width: 15%;
             margin-right: 15%;
         }
-        @media(min-width: 1250px){
+
+        @media(min-width: 1250px) {
             margin-right: 28%;
         }
         @media(min-width: 1500px){
@@ -251,10 +255,9 @@ footer{
 
     // Div within the footer that has divs which has social media and phone number
     // Given flex row align items center
-    #footer-wrapper{
+    #footer-wrapper {
         @include flex-layout-row;
         flex-wrap: nowrap;
-
 
         //footer-wrapper media query
         @media(min-width: $breakpoint-desktop){
@@ -264,10 +267,10 @@ footer{
             padding-top:4rem;
         }
 
-        div{
+        div {
             width: 100%;
 
-            @media(min-width:$breakpoint-tablet){
+            @media(min-width:$breakpoint-tablet) {
                 max-width: 12.2rem;
             }
 
@@ -280,6 +283,7 @@ footer{
                     margin: 0 0.2rem;
                 }
             }
+
             i {
                 background-color: white;
                 color: map-get($colors, secondary-body-bg);
@@ -290,7 +294,8 @@ footer{
         }
 
     }
-    p{
+
+    p {
         line-height: $line-height * 2;
         padding-bottom: $tiny-space;
 
@@ -301,9 +306,8 @@ footer{
             line-height: 0;
             margin: -10px 0;
         }
-        @media(min-width:$breakpoint-desktop){
+        @media(min-width:$breakpoint-desktop) {
             @include margin-reset-0;
-
             flex: 1;
             text-align: initial;
             padding-top:3rem;
