@@ -82,6 +82,7 @@
             object-fit: cover;
 
             @media(min-width:$breakpoint-tablet){
+                max-height: 32vh;
                 width: 100%;
             }
         }
@@ -178,14 +179,17 @@
             }
         }
 
-        .wave{
+        .wavetest{
             @include wave-styling-mobile;
-            background-position: 20% 101%;
+            background-image: url(../images/wave-blue-light.png);
+            background-position: 20% 100%;
             position: absolute;
+            overflow-x: hidden;
+            //*****
             width: 100vw;
+            overflow-x: hidden;
             top: 270px;
             height: 4rem;
-            background-image: url(../images/wave-blue-light.png);
 
             @media (min-width: $breakpoint-tablet) {
                 @include wave-styling-tablet;
@@ -195,7 +199,7 @@
 
             @media(min-width: $breakpoint-tablet) {
                 @include wave-styling-tablet;
-                height:94px;
+                height:76px;
             }
         }
     }
@@ -205,6 +209,7 @@
 footer {
     // Reset margins, give display flex 
     @include margin-reset-0;
+    overflow-x: hidden;
 
     font-family: $txt-font;
     font-size: $font-footer-size-2;
@@ -214,7 +219,8 @@ footer {
     text-transform: uppercase;
 
     @media(min-width:$breakpoint-tablet){
-        width: 100vw;
+        // *********************
+        width: 99vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
