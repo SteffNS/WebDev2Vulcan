@@ -70,6 +70,13 @@
        @include styled-button;
     }
 
+    #header-text-btns {
+        position: relative;
+        margin: 0 auto;
+        width: auto;
+        display: block;
+    }
+
     #products-btn {
         display: inline-block;
         position: absolute;
@@ -156,54 +163,7 @@
     }
 
     #products-btn {
-        top: -170px !important;
-        transform: translateX(-95px);
+        top: -190px !important;
     }
 
-    #services-btn {
-        top: -170px !important;
-        transform: translateX(95px);
-    }
-
-}
-
-@media screen and (min-width: 1600px) {
-
-    #carouselExampleIndicators {
-    
-        img {
-            height: 44rem !important;
-        }
-    }
-
-    .header-text {
-
-        h1 {
-            max-width: 1100px;
-            font-size: 4.5rem;
-            top: -445px;
-            line-height: 4.7rem;
-            letter-spacing: 0.1rem;
-        }
-
-    }
-
-    #header-slider {
-    
-        #white-wave-bg {
-            top: 660px;
-        }
-    }
-
-    #products-btn {
-        top: -130px !important;
-        padding: 0.7rem 2rem;
-        transform: translateX(-123px);
-    }
-
-    #services-btn {
-        top: -130px !important;
-        padding: 0.7rem 2.255rem;
-        transform: translateX(123px);
-    }
 }

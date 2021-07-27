@@ -70,6 +70,13 @@
        @include styled-button;
     }
 
+    #header-text-btns {
+        position: relative;
+        margin: 0 auto;
+        width: auto;
+        display: block;
+    }
+
     #products-btn {
         display: inline-block;
         position: absolute;
@@ -172,18 +179,15 @@
     #carouselExampleIndicators {
     
         img {
-            height: 44rem !important;
+            height: 80vh !important;
         }
     }
 
     .header-text {
 
         h1 {
-            max-width: 1100px;
-            font-size: 4.5rem;
-            top: -445px;
-            line-height: 4.7rem;
-            letter-spacing: 0.1rem;
+            font-size: 4rem;
+            top: -410px;
         }
 
     }
@@ -191,19 +195,7 @@
     #header-slider {
     
         #white-wave-bg {
-            top: 660px;
+            top: 642px;
         }
-    }
-
-    #products-btn {
-        top: -130px !important;
-        padding: 0.7rem 2rem;
-        transform: translateX(-123px);
-    }
-
-    #services-btn {
-        top: -130px !important;
-        padding: 0.7rem 2.255rem;
-        transform: translateX(123px);
     }
 }

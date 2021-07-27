@@ -192,6 +192,7 @@
 
     #nav-wrapper {
         top: 115px;
+        height: 110px;
 
         #head-nav-list {
             width: 840px;
@@ -214,18 +215,17 @@
 
     #nav-wrapper {
         top: 130px;
-        height: 110px;
+
         #head-nav-list {
             width: 820px;
-            padding-bottom: 0;
+
             #nav-ul {
                 width: 820px; 
 
                 li {
                     a {
                         width: 136px;
-                        padding-top: 19px;
-                        margin-bottom: 1.6rem;
+                        padding-top: 10px;
                     }
                 }
             }
