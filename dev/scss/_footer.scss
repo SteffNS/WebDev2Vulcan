@@ -15,7 +15,7 @@
             padding-bottom: $tiny-space;
             color: map-get($colors, body-bg);
 
-            @media(min-width:$breakpoint-mobile){
+            @media(min-width:$breakpoint-tablet){
                 display: inline;
             }
         }
@@ -23,7 +23,7 @@
         form{
             padding: $small-space/2;
 
-            @media(min-width:$breakpoint-mobile){
+            @media(min-width:$breakpoint-tablet){
                 display: inline;
             }
 
@@ -33,7 +33,7 @@
                 border: none;
                 width: 65%;
                 height: 2.1rem;
-                @media(min-width:$breakpoint-mobile){
+                @media(min-width:$breakpoint-tablet){
                     margin: 0 0.25rem;
                     height: 1.8rem;
                     width: 35%;
@@ -42,12 +42,14 @@
                     width: 25%;
                 }
             }
+
             // Styling for placeholder text
             ::placeholder{
                 font-family: $txt-font;
                 padding: 4%;
                 font-size:10px;
-                @media(min-width:$breakpoint-mobile){
+
+                @media(min-width:$breakpoint-tablet){
                     font-size: 14px;
                 }
             }
@@ -55,7 +57,7 @@
             input[type='submit'] {
                 @include mobile-submit-button;
 
-                @media(min-width:$breakpoint-mobile){
+                @media(min-width:$breakpoint-tablet){
                     font-size: $font-size;
                     padding: 0.4rem 0.85rem;
                 }
@@ -65,7 +67,8 @@
     // Second div with the map background and link
     div:nth-child(2){
         position: relative;
-        @media(min-width:$breakpoint-mobile){
+
+        @media(min-width:$breakpoint-tablet){
             width:50%;
             order:2;
             float: right;
@@ -75,12 +78,14 @@
             height: 35vh;
             width: 100vw;
             object-fit: cover;
-            @media(min-width:$breakpoint-mobile){
+
+            @media(min-width:$breakpoint-tablet){
                 width: 100%;
             }
         }
         h3 {
             @include center-text;
+
             top:45%;
             text-align: center;
             z-index: 2;
@@ -88,12 +93,18 @@
             color: map-get($colors, body-header);
             text-transform: uppercase;
 
+            @media(min-width:$breakpoint-desktop){
+                top:43%;
+                left: 41%;
+            }
+
             span{
                 display: block;
             }
         }
         a {
             @include center-text;
+
             font-family: $txt-font;
             top: 67%;
             display: block;
@@ -107,21 +118,13 @@
             font-size: $font-footer-size;
             padding: $tiny-space;
 
-
-        }
-        @media(min-width:$breakpoint-mobile){
-            a{
+            @media(min-width:$breakpoint-tablet){
                 @include tablet-submit-button;
                 top:62%;
             }
-        }
-        @media(min-width:$breakpoint-desktop){
-            h3{
-                left: 41%;
-            }
-            a{
-                left: 35%;
-                top:72%;
+            @media(min-width:$breakpoint-desktop){
+                left:41%;
+                top: 70%;
             }
         }
     }
@@ -134,7 +137,7 @@
         position: relative;
         padding-bottom: $extra-large-space*1.5;
 
-        @media(min-width:$breakpoint-mobile){
+        @media(min-width:$breakpoint-tablet){
             width: 50%;
             order:1;
         }
@@ -149,7 +152,7 @@
             span{
                 display: block;
             }
-            @media(min-width:$breakpoint-mobile){
+            @media(min-width:$breakpoint-tablet){
                 padding: 1.5rem 0;
             }
             @media(min-width:$breakpoint-desktop){
@@ -163,20 +166,23 @@
         a{
             @include styled-button;
             
-            @media(min-width:$breakpoint-mobile){
+            @media(min-width:$breakpoint-tablet){
                 @include tablet-submit-button;
             }
         }
         .wave{
             @include wave-styling-mobile;
+
             background-position: 20% 101%;
             position: absolute;
             width: 100vw;
             top: 270px;
             height: 4rem;
             background-image: url(../images/wave-blue-light.png);
-            @media (min-width: $breakpoint-mobile){
+
+            @media (min-width: $breakpoint-tablet){
                 @include wave-styling-tablet;
+
                 top:257px;
                 height: 60px;
             }
@@ -196,6 +202,7 @@
 footer{
     // Reset margins, give display flex 
     @include margin-reset-0;
+
     font-size: $font-footer-size-2;
 
     background-color: map-get($colors, secondary-body-bg);
@@ -203,7 +210,7 @@ footer{
     text-align: center;
     text-transform: uppercase;
 
-    @media(min-width:$breakpoint-mobile){
+    @media(min-width:$breakpoint-tablet){
         width: 100vw;
         display: flex;
         flex-wrap: wrap;
@@ -213,16 +220,29 @@ footer{
     }
 
     @media(min-width:$breakpoint-desktop){
+        justify-content: space-between;
         align-items: center;
     }
+
 
 
     #symb-logo{
         width: 35%;
         padding: 1rem 0;
 
-        @media(min-width: $breakpoint-mobile){
+        @media(min-width: $breakpoint-tablet){
+            margin: 0 4rem;
             width:20%;
+        }
+        @media(min-width: $breakpoint-desktop){
+            max-width: 15%;
+            margin-right: 15%;
+        }
+        @media(min-width: 1250px){
+            margin-right: 28%;
+        }
+        @media(min-width: 1500px){
+            margin-right: 31%;
         }
     }
 
@@ -233,6 +253,12 @@ footer{
         // justify-content: space-evenly;
         flex-wrap: nowrap;
 
+
+
+        // @media(min-width:$breakpoint-desktop){
+        //     margin-left: 2rem;
+        // }
+
         div{
             width: 100%;
             // display: flex;
@@ -240,16 +266,16 @@ footer{
             // align-items: center;
             // justify-content: space-evenly;
 
-            @media(min-width:$breakpoint-mobile){
+            @media(min-width:$breakpoint-tablet){
                 max-width: 12.2rem;
             }
 
             // facebook and linkedin icon images
             .icon{
                 // margin: 0.15rem;
-                max-width: 30%;
+                max-width: 18%;
 
-                @media(min-width:$breakpoint-mobile){
+                @media(min-width:$breakpoint-tablet){
                     max-width: 20%;
                     margin: 0 0.2rem;
                 }
@@ -267,27 +293,17 @@ footer{
     p{
         line-height: $line-height * 2;
         padding-bottom: $tiny-space;
-    }
 
-    @media(min-width:$breakpoint-mobile){
-        #symb-logo{
-            margin: 0 4rem;
-        }
-        p{
-            // flex-shrink: 0;
+        @media(min-width:$breakpoint-tablet){
             flex: 0 0 100%;
             text-align: right;
             padding: 0 6rem 2rem 0;
             line-height: 0;
             margin: -10px 0;
         }
-    }
-    @media(min-width: $breakpoint-desktop){
-        #symb-logo{
-            max-width: 15%;
-        }
-        p{
+        @media(min-width:$breakpoint-desktop){
             @include margin-reset-0;
+
             flex: 1;
             text-align: initial;
         }
