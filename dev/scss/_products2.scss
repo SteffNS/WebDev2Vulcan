@@ -7,11 +7,9 @@
     @media (min-width: $breakpoint-tablet){
         @include wave-styling-tablet;
       
-    }
-
- 
-    
+    }    
 }
+
 .products {
     padding: $small-space;
     background-color: map-get($colors, body-bg );
@@ -56,7 +54,7 @@
             grid-gap: 1.25rem;
         }
 
-        @media (min-width: $breakpoint-desktop) {
+        @media (min-width: $breakpoint-desktop){
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -148,12 +146,12 @@
         }
         
         .submit-button {
-        @media (min-width: $breakpoint-tablet){
+        @media (min-width: $breakpoint-tablet) {
             padding: $large-space;
             }
         }
     }
-   
+
 }
 
 

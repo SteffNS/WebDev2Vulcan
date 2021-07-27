@@ -54,7 +54,7 @@
         h2 {
             color: #154a66 !important;
             font-size: 30px;
-            padding-top: 1rem;
+            padding-top: $small-space;
         }
 
         p {
@@ -73,7 +73,7 @@
             display: flex;
             flex-direction: column;
             margin: 0 auto;
-            margin-bottom: 2rem;
+            margin-bottom: $large-space;
             // width: 25%;
             text-align: center;
             
@@ -97,7 +97,7 @@
                     display: inline-block;
                     color: #616161;
                     text-align: center;
-                    margin-bottom: 2rem;
+                    margin-bottom: $large-space;
                 }
             }
         }
@@ -115,7 +115,7 @@
 
         p {
             max-width: 745px;
-            padding-top: 1rem;
+            padding-top: $small-space;
             margin-bottom: 3rem !important;
         }
 
