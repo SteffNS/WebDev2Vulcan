@@ -82,12 +82,12 @@
             object-fit: cover;
 
             @media(min-width:$breakpoint-tablet){
-                height: 30vh;
+                height: 20rem;
                 width: 100%;
             }
-            @media(min-width:$breakpoint-desktop){
-                height: 34vh;
-            }
+            // @media(min-width:$breakpoint-desktop){
+                // height: 34vh;
+            // }
         }
 
         h3 {
