@@ -1,0 +1,186 @@
+#carouselExampleIndicators {
+    position: relative;
+
+    img {
+        height: 37rem;
+        object-fit: cover;
+        max-height: $img-full;
+        max-width: $img-full;
+        vertical-align: middle;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 30px;
+    }
+
+    button {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    .active {
+        background-color: #419bd6;
+    }
+}
+
+#header-slider {
+    position: relative;
+
+    #white-wave-bg {
+        background-image: url('../images/wave-white.png');
+        @include wave-styling-mobile;  
+        position: absolute;
+        top: 545px;
+        height: 5rem;
+        width: 100vw;
+        @media (min-width: $breakpoint-mobile){
+            @include wave-styling-tablet;
+        }
+    }
+}
+
+// Text and buttons on top of image slider
+.header-text {
+    position: relative;
+    @include flex-center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    h1 { 
+        font-family: $header-font;
+        font-size: $header-font-size;
+        font-weight: $font-weight;
+        text-transform: $text-transform;
+        line-height: $header-line-height;
+        color: #ffffff;
+        width: 100vw;
+        padding-left: $small-space/2;
+        padding-right: $small-space/2;
+        position: absolute;
+        top: -450px;
+        text-align: center;
+        max-width: 650px;
+    }
+
+    .styled-button {
+       @include styled-button;
+    }
+
+    #header-text-btns {
+        position: relative;
+        margin: 0 auto;
+        width: auto;
+        display: block;
+    }
+
+    #products-btn {
+        display: inline-block;
+        position: absolute;
+        top: -240px;
+        width: auto;
+        margin: 0 auto;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    #services-btn {
+        position: absolute;
+        top: -175px;
+        width: auto;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+
+    .header-text {
+
+        h1 {
+            font-size: 2.5rem;
+            max-width: 720px;
+            top: -370px;
+            line-height: 2.9rem;
+            // padding: 0 2rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    #carouselExampleIndicators {
+        button {
+            height: 16px;
+            width: 16px;
+            margin: 0 0.5rem;
+        }
+    }
+
+    #products-btn {
+        top: -175px !important;
+        transform: translateX(-82px);
+    }
+
+    #services-btn {
+        transform: translateX(82px);
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+
+    .header-text {
+
+        h1 {
+            max-width: 840px;
+            top: -325px;
+        }
+    }
+
+    #products-btn {
+        top: -205px !important;
+    }
+
+    #services-btn {
+        top: -205px !important;
+    }
+
+}
+
+@media screen and (min-width: 1260px) {
+
+    .header-text {
+
+        h1 {
+            max-width: 1000px;
+            font-size: 3.1rem;
+            line-height: 3.3rem;
+            top: -310px;
+            font-weight: 600;
+        }
+    }
+
+    #products-btn {
+        top: -170px !important;
+        transform: translateX(-95px);
+    }
+
+    #services-btn {
+        top: -170px !important;
+        transform: translateX(95px);
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    .header-text {
+
+        h1 {
+            font-size: 4rem;
+        }
+
+    }
+}
