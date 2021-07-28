@@ -85,14 +85,11 @@
                 height: 20rem;
                 width: 100%;
             }
-            // @media(min-width:$breakpoint-desktop){
-                // height: 34vh;
-            // }
         }
 
         h3 {
             @include center-text;
-            top:45%;
+            top:37%;
             text-align: center;
             z-index: 2;
             width: 15rem;
