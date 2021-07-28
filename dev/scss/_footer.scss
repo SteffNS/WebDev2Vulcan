@@ -77,13 +77,16 @@
             }
 
         img {
-            height: 37vh;
+            // height: 37vh;
             width: 100vw;
             object-fit: cover;
 
             @media(min-width:$breakpoint-tablet){
-                max-height: 32vh;
+                height: 30vh;
                 width: 100%;
+            }
+            @media(min-width:$breakpoint-desktop){
+                height: 34vh;
             }
         }
 
@@ -194,12 +197,11 @@
             @media (min-width: $breakpoint-tablet) {
                 @include wave-styling-tablet;
                 top:257px;
-                height: 60px;
+                height: 76px;
             }
 
-            @media(min-width: $breakpoint-tablet) {
-                @include wave-styling-tablet;
-                height:76px;
+            @media(min-width: $breakpoint-desktop) {
+                height:116px;
             }
         }
     }
@@ -220,7 +222,7 @@ footer {
 
     @media(min-width:$breakpoint-tablet){
         // *********************
-        width: 99vw;
+        width: 100vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
